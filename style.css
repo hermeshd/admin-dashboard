@@ -64,9 +64,11 @@ body {
     display: grid;
     grid-template-columns: repeat(3, min-content);
     grid-template-rows: auto;
-    gap: 10px;
+    gap: 25px;
     align-items: center;
     justify-content: center;
+    justify-self: end;
+    padding-right: 10px;
 }
 
 .search-and-user .user h3 {
@@ -76,12 +78,6 @@ body {
 
 .search-and-user .user>* {
     margin: 5px 0;
-}
-
-#notifications-icon,
-#user-icon {
-    width: 40px;
-    height: 40px;
 }
 
 .title-and-action-buttons {
@@ -122,14 +118,6 @@ body {
     margin: 0;
 }
 
-
-#big-user-icon {
-    grid-row: 1 / -1;
-    height: 70px;
-    width: 70px;
-
-}
-
 .title-and-action-buttons .action-buttons {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -156,7 +144,6 @@ body {
     grid-template-rows: repeat(2, min-content) 1fr;
     column-gap: 20px;
     row-gap: 30px;
-    padding: 10px;
 }
 
 .projects {
@@ -274,8 +261,8 @@ body {
 
 .trending-profile-img {
     grid-row: 1 / -1;
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
     align-self: center;
 }
 
@@ -388,7 +375,7 @@ p {
 .content {
     background-color: var(--color-light-grey);
     color: var(--text-color);
-    padding: 15px 20px 15px 20px;
+    padding: 30px 20px 15px 20px;
 }
 
 .content .title {
@@ -397,8 +384,8 @@ p {
 }
 
 #search-icon {
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
 }
 
 #search-input {
@@ -476,4 +463,21 @@ p {
 
 .trending .card .trending-user-actual-name {
     align-self: start;
+}
+
+#user-icon {
+    width: 50px;
+    height: 50px;
+}
+
+#notifications-icon {
+    width: 25px;
+    height: 25px;
+}
+
+#big-user-icon {
+    grid-row: 1 / -1;
+    height: 70px;
+    width: 70px;
+
 }
